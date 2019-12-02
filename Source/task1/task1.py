@@ -17,9 +17,8 @@ def task1():
                 maximum = data[j]
                 i = j
         total += (i+1-last) * maximum
-        for k in range(i):
+        for k in range(i+1):
             data[k] = 0
-        data[i] = 0
         count -= (i+1-last)
         last = i + 1
     f = open('output.txt', 'w')
